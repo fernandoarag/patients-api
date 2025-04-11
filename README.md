@@ -57,7 +57,7 @@ O projeto segue os princípios da Arquitetura Limpa (Clean Architecture), organi
 1. Clone o repositório:
    ```bash
    git clone https://github.com/fernandoarag/patients-api.git
-   cd pacientes-api
+   cd patients-api
    ```
 
 2. Compile o projeto:
@@ -193,9 +193,9 @@ A API implementa um tratamento de exceções centralizado para retornar mensagen
 
 Para contribuir com o desenvolvimento:
 
-1. Crie um branch para sua feature: `git checkout -b feature/nova-funcionalidade`
+1. Crie um branch para sua feature: `git checkout -b feature/#codIssue-nova-funcionalidade`
 2. Faça suas alterações e commit: `git commit -m 'Adiciona nova funcionalidade'`
-3. Envie para o branch: `git push origin feature/nova-funcionalidade`
+3. Envie para o branch: `git push origin feature/#codIssue-nova-funcionalidade`
 4. Abra um Pull Request
 
 ## 📄 Licença
