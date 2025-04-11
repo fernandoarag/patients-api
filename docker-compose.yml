@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./
+    ports:
+      - "8080:8080"
+    container_name: patients
+    networks:
+      - locahost
+networks:
+  locahost:
+    driver: bridge

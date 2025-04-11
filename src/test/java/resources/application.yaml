@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: Patient API
+  datasource:
+    url: jdbc:h2:/data/pacientesdb;AUTO_SERVER=TRUE;
+    username: sa
+    password: ${DB_PASSWORD:password}
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        show_sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  sql:
+    init:
+      mode: always
+# Spring Doc
+springdoc:
+  packages-to-scan: br.com.fiap.postech.patientapi.interfaces.rest
+  api-docs:
+    enabled: true
+# Logging
+logging:
+  level:
+    web: DEBUG
+server:
+  servlet:
+    context-path: /api/patients-system/v1
+  port: 8080
