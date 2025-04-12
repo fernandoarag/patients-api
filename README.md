@@ -84,14 +84,14 @@ O projeto segue os princípios da Arquitetura Limpa (Clean Architecture), organi
 
 ## 📡 Endpoints da API
 
-| Método | Endpoint                  | Descrição                        |
-|--------|---------------------------|----------------------------------|
-| POST   | `/api/patients`           | Cria um novo paciente            |
-| GET    | `/api/patients`           | Lista todos os pacientes         |
-| GET    | `/api/patients/{id}`      | Busca um paciente pelo ID        |
-| GET    | `/api/patients/cpf/{cpf}` | Busca um paciente pelo CPF       |
-| PUT    | `/api/patients/{id}`      | Atualiza os dados de um paciente |
-| DELETE | `/api/patients/{id}`      | Remove um paciente               |
+| Método | Endpoint                                     | Descrição                        |
+|--------|----------------------------------------------|----------------------------------|
+| POST   | `/api/patients-system/v1/patients`           | Cria um novo paciente            |
+| GET    | `/api/patients-system/v1/patients`           | Lista todos os pacientes         |
+| GET    | `/api/patients-system/v1/patients/{id}`      | Busca um paciente pelo ID        |
+| GET    | `/api/patients-system/v1/patients/cpf/{cpf}` | Busca um paciente pelo CPF       |
+| PUT    | `/api/patients-system/v1/patients/{id}`      | Atualiza os dados de um paciente |
+| DELETE | `/api/patients-system/v1/patients/{id}`      | Remove um paciente               |
 
 ### Exemplos de Requisições
 
